@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS grid test</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .grid {
+        /* Reset */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-auto-rows: minmax(10rem, auto);
+      }
+
+      .grid-item {
+        padding: 1rem;
+        z-index: 1;
+        transition: transform 1s, z-index 1s;
+        transition-timing-function: ease;
+        border: 1px solid black;
+      }
+
+      .grid-item:hover {
+        transform: scale(1.25);
+        z-index: 10;
+      }
+
+      .grid-item:nth-child(even) {
+        background-color: #aaeeaa;
+      }
+
+      .grid-item:nth-child(odd) {
+        background-color: #eeaaaa;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="grid">
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+      <li class="grid-item">Some item</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS grid test</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .grid {
+        /* Reset */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: grid;
+        /* grid-template-columns: 2fr 1fr 1fr 1fr 2fr; */
+        grid-template-columns: 2fr repeat(5, 1fr) 2fr;
+
+        grid-auto-rows: minmax(10rem, auto);
+      }
+
+      .grid-item {
+        padding: 1rem;
+      }
+
+      .grid-item:nth-child(even) {
+        background-color: #aaeeaa;
+      }
+
+      .grid-item:nth-child(odd) {
+        background-color: #eeaaaa;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="grid">
+      <li class="grid-item">
+        List item Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Quis, facilis fugiat harum maxime alias dolor molestiae sint. Eveniet ad
+        rem alias, facere mollitia tempore porro consectetur impedit eligendi
+        cumque magni? Eos, nulla rerum beatae excepturi perspiciatis ut corrupti
+        voluptatum officiis sit obcaecati quos exercitationem iste quas sed
+        autem tempore! Neque quasi suscipit voluptates voluptatibus, nobis
+        tenetur doloribus cupiditate dolorum atque necessitatibus vel sint cum
+        unde velit, rem itaque nemo aut hic libero iste officia? Voluptatum amet
+        asperiores pariatur id officia!
+      </li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+      <li class="grid-item">List item</li>
+    </ul>
+  </body>
+</html>
